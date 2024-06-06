@@ -21,4 +21,4 @@ read mensaje
 git commit -m "$mensaje"
 
 # Realizar el push al repositorio remoto
-git push origin master
+git push -u origin master
