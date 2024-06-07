@@ -1,11 +1,32 @@
-## Abstract
+<p align="center">
+<strong>Hybrid Optical-Radio Communication Technologies to Improve Indoor Telecommunications Systems</strong>
+</p>
+
+<p align="center">
+<strong>MSc(C) Juan David Navarro Restrepo</strong>
+</p>
+
+<p align="center">
+<strong>Institución Universitaria ITM, Cl. 54A #30-01, Medellín, Colombia.</strong>
+</p>
+
+<p align="center">
+<strong>e-mail:</strong> Juannavarro139070@correo.itm.edu.co
+</p>
+
+### Abstract
 This work experimentally demonstrates, through statistical studies, the degradation of the SNR of a conventional broadcasting signal in urban environments. Additionally, it proposes a hybrid system that combines Radio Frequency and Visible Light Communication technologies to mitigate the non-uniformity of signals in indoor environments. The combination of these two technologies proves to be a promising solution for multiple application scenarios, such as the Internet of Things, Smart Cities, Sustainable Mining, Indoor Positioning, and others.
 
-## Keywords
-Atmospheric Absorption, RF, VLC, SNR, Scattering, Shadowing.
+<p align="left">
+<i><strong>Keywords:</strong> Atmospheric Absorption, RF, VLC, SNR, Scattering, Shadowing.</i>
+</p>
 
 ## Introduction
 The deployment of telecommunications networks faces significant challenges due to bandwidth management in wireless channels. Although the electromagnetic spectrum is theoretically infinite, only a portion of the radio spectrum is utilized, limiting its use to a few tens of GHz (See Table 1). Some bands must remain free for special uses, further restricting the spectrum available for commercial services [Hattab2019]. Additionally, the wireless channel is more limited compared to optical fiber and conductor cables due to physical phenomena such as cosmic noise [Bala2002], atmospheric noise [Reuveni2010], atmospheric absorption [Rashmeet2018], multipath interference [Lucas2017], partial reflection of electromagnetic waves in matter [Gaonkar2016], and diffraction [Tinin2020].
+
+<div align="center">
+    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/An_Urban_Broadcast_RadioTower.png" alt="An Urban Broadcast RadioTower" width="600">
+</div>
 
 These phenomena force communication systems to preprocess signals to ensure bandwidth efficiency and maintain desired speeds under adverse conditions. However, meeting quality standards in an indoor wireless communication system is extremely complex in cities due to the shadowing of electromagnetic waves by buildings of varying heights. This makes it difficult for indoor receivers to have an equitable SNR among different users.
 
@@ -24,7 +45,7 @@ These phenomena force communication systems to preprocess signals to ensure band
 
 Data taken from the National Spectrum Agency - ANE.
 
-![An urban broadcast radio tower](img/fig1.png)
+----
 
 To handle these challenges, Visible Light Communication - VLC is considered, a promising technology for indoor environments that can complement the deficiencies of RF systems [Mohsan2023]. In the following section, experimental results and statistical studies demonstrating signal degradation in urban environments will be presented, and a hybrid RF-VLC system will be proposed as a potential solution.
 
@@ -32,18 +53,24 @@ To handle these challenges, Visible Light Communication - VLC is considered, a p
 ### Degradation of a Broadcasting Signal
 For our study, we chose the free commercial frequency tuned to 103.5 MHz in the city of Medellín. We used a USRP (Universal Software Radio Peripheral) device along with AIRSPY software to perform the measurements. The selected locations for the measurements included the 1st to 5th floors of the university building, the terrace on the sixth floor, and the basements 1 and 2 of the Fraternidad campus at the ITM University Institution.
 
-![Fraternidad campus at the ITM University Institution](img/ITM.png)
+<div align="center">
+    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/Histogram.png" alt="Histogram" width="600">
+</div>
 
 ### Statistic Analysis
 Our object of study resulted in the consolidated data shown in Table 2, where a lower average can be observed on the lower levels compared to the upper levels. A more graphical view can be seen in the histogram in Figure 2.
 
 The worst SNR values are observed in basements 1 and 2, indicating greater signal degradation in underground environments. In contrast, the terrace shows the best SNR values, reflecting better transmission conditions compared to the lower levels.
 
-![Histogram by Source](img/Histogram-boldo.png)
+<div align="center">
+    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/ITM.png" alt="ITM" width="600">
+</div>
 
 In Figure 3, the scatter measurements show a clear downward trend in the basements, indicating significant signal degradation compared to the upper levels. While the upper floors present more stable SNR values, the basements suffer from greater interference and signal absorption, reflecting worse transmission conditions.
 
-![Scatter Plot](img/ScatterPlot.png)
+<div align="center">
+    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/ScatterPlot.png" alt="Scatter Plot" width="600">
+</div>
 
 We applied the Kruskal-Wallis test, a non-parametric test used to determine if there are significant differences between the medians of two or more independent groups. We obtained the following results:
 - **Test statistic (H):** 1403.1096315801597
@@ -68,7 +95,11 @@ The SNR statistical data presented in Table 3 support these findings. Basements 
 | Basement 1  | 7.875  | 11.50  | 11.815  | 3.940 | 5.590        | 17.410     | 5.896   | 8.56  | 8.26  | 34.774   |
 | Basement 2  | 4.610   | 4.92  | 5.180   | 0.570 | 4.0710       | 5.781      | 0.342   | 4.93  | 4.57  | 0.117    |
 
-![SNR Violin Plot](img/Violin3.png)
+---
+
+<div align="center">
+    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/ViolinPlot.png" alt="Violin Plot" width="600">
+</div>
 
 Analysis of the SNR violin plot by source reveals significant differences in radio signal quality across the different levels of the university. The lower floors show narrower distributions and more consistent SNR values, indicating more stable transmission conditions. In contrast, the upper floors and terrace show greater variability,
 probably due to external environmental factors. Basements, although with intermediate variability, tend to have lower SNR values, reflecting more unfavorable transmission conditions in these subway environments. These findings highlight how location and environment influence RF signal degradation, underscoring the need for specific strategies to improve uniform signal distribution in areas with diverse characteristics.
@@ -91,5 +122,3 @@ The design of a hybrid RF-VLC system involves the integration of specific compon
 The convergence of RF and VLC technologies offers an innovative solution to overcome current barriers in indoor data transmission. This integration not only handles the challenges inherent in indoor communications, but also establishes a new paradigm in data transmission, providing more reliable and efficient communication in densely populated urban environments. This proposal promises to significantly improve the quality of telecommunications service, meeting the growing demands for speed and reliability in data transmission.
 
 The SNR study demonstrated signal degradation in indoor environments and, based on the state of the art and our experience in VLC, we propose convergence as a promising solution to mitigate these problems and improve the quality of communications. Also, this technology is not only applicable to urban scenarios, but also to potential applications in IoT, smart cities, sustainable mining and subway communications, among others.
-
-
