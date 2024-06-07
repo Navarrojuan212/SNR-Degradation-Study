@@ -104,7 +104,7 @@ probably due to external environmental factors. Basements, although with interme
     <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/ViolinPlot.png" alt="Violin Plot" width="600">
 </div>
 
-# Hybrid RF-VLC System
+### Hybrid RF-VLC System
 
 Broadcasting in densely populated urban environments faces critical challenges, as RF signals, although critical, are susceptible to interference, attenuation by physical obstacles and bandwidth saturation. These difficulties are compounded in indoor environments, where the presence of various structures and materials can cause shadow zones and significant SNR variations. 
 
@@ -117,7 +117,7 @@ The convergence of RF and VLC systems has the potential to combine the strengths
 The design of a hybrid RF-VLC system involves the integration of specific components that enable efficient and reliable communication. Using the heterodyning process \cite{Avdeyenko2023}, intermediate frequency radio signals can be matched to the frequency response of the LEDs, creating a system that combines the best of both worlds. This hybrid system would not only improve SNR in indoor environments, but also optimize the distribution of broadcast signals in densely populated urban areas.
 
 
-# Conclusion
+### Conclusion
 
 The convergence of RF and VLC technologies offers an innovative solution to overcome current barriers in indoor data transmission. This integration not only handles the challenges inherent in indoor communications, but also establishes a new paradigm in data transmission, providing more reliable and efficient communication in densely populated urban environments. This proposal promises to significantly improve the quality of telecommunications service, meeting the growing demands for speed and reliability in data transmission.
 
