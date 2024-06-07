@@ -1,66 +1,73 @@
-# Contextualizing Data
+## Abstract
+This work experimentally demonstrates, through statistical studies, the degradation of the SNR of a conventional broadcasting signal in urban environments. Additionally, it proposes a hybrid system that combines Radio Frequency and Visible Light Communication technologies to mitigate the non-uniformity of signals in indoor environments. The combination of these two technologies proves to be a promising solution for multiple application scenarios, such as the Internet of Things, Smart Cities, Sustainable Mining, Indoor Positioning, and others.
 
-<p align="center">
-<strong>PROPOSAL FOR A HYBRID RADIO-OPTICAL COMMUNICATION TECHNOLOGY TO IMPROVE INDOOR TELECOMMUNICATION SYSTEMS</strong>
-</p>
+## Keywords
+Atmospheric Absorption, RF, VLC, SNR, Scattering, Shadowing.
 
-<p align="center">
-<strong>Juan David Navarro Restrepo</strong>
-</p>
+## Introduction
+The deployment of telecommunications networks faces significant challenges due to bandwidth management in wireless channels. Although the electromagnetic spectrum is theoretically infinite, only a portion of the radio spectrum is utilized, limiting its use to a few tens of GHz (See Table 1). Some bands must remain free for special uses, further restricting the spectrum available for commercial services [Hattab2019]. Additionally, the wireless channel is more limited compared to optical fiber and conductor cables due to physical phenomena such as cosmic noise [Bala2002], atmospheric noise [Reuveni2010], atmospheric absorption [Rashmeet2018], multipath interference [Lucas2017], partial reflection of electromagnetic waves in matter [Gaonkar2016], and diffraction [Tinin2020].
 
-<p align="center">
-<strong>Institución Universitaria ITM, Cl. 54A #30-01, Medellín, Colombia.</strong>
-</p>
+These phenomena force communication systems to preprocess signals to ensure bandwidth efficiency and maintain desired speeds under adverse conditions. However, meeting quality standards in an indoor wireless communication system is extremely complex in cities due to the shadowing of electromagnetic waves by buildings of varying heights. This makes it difficult for indoor receivers to have an equitable SNR among different users.
 
-<p align="center">
-<strong>e-mail:</strong> Juannavarro139070@correo.itm.edu.co
-</p>
+### Frequency Bands
+| Band | Acronym | Frequency | Wavelength ($\lambda$) |
+|------|---------|-----------|-----------------------|
+| 4    | VLF     | 3 to 30 KHz      | 100 to 10 Km  |
+| 5    | LF      | 30 to 300 KHz    | 10 to 1 Km    |
+| 6    | MF      | 300 to 3000 KHz  | 1 Km to 100 m |
+| 7    | HF      | 3 to 30 MHz      | 100 to 10 m   |
+| 8    | VHF     | 30 to 300 MHz    | 10 to 1 m     |
+| 9    | UHF     | 300 to 3000 MHz  | 1 m to 100 mm |
+| 10   | SHF     | 3 to 30 GHz      | 100 to 10 mm  |
+| 11   | EHF     | 30 to 300 GHz    | 10 to 1 mm    |
+| 12   | THF     | 300 to 3000 GHz  | $<$ 1 mm      |
+Data taken from the National Spectrum Agency - ANE.
 
------
-Wireless communications face significant challenges in urban areas **[1]** due to signal degradation when radio waves travel through the air and encounter various obstacles in the wireless channel. Several propagation mechanisms negatively impact RF signals **[1]**, such as shadowing, deep fading, scattering, and atmospheric absorption, among others. Currently, since ubiquity is a necessary feature in telecommunications, connectivity with external antennas from indoor spaces and vice versa is the worst scenario when we want to stay connected while maintaining high quality of service. The problem will be even greater if there are many skyscrapers or large buildings in the surroundings. However, we have different technologies that can be very useful for guiding radio waves through the walls of buildings and then using some network infrastructure devices to distribute the signals to all interior spaces, even to the most inconceivable corner of the building, maintaining wireless connectivity.
+![An urban broadcast radio tower](img/fig1.png)
 
-Based on a thorough review of the state of the art, we identified the potential convergence **[2]**, **[3]**, **[4]** of RF and VLC (Visible Light Communication) systems as a promising solution capable of transmitting signals in the visible range of the spectrum, which does not require licenses for operation. On the other hand, the use of VLC allows covering two needs at the same time, such as indoor lighting and, of course, communication **[5]**, **[6]**. Another aspect that makes VLC technology attractive is that it allows a higher level of security in IT systems, as light does not penetrate walls or ceilings, and this same behavior of light solves a latent problem in horizontal property buildings, as these are saturated with WiFi signals. It is common to find not only the local wireless network but also the neighbors' networks at home. With VLC, wireless connectivity would be restricted to the spaces occupied by the respective user, thus avoiding interference in neighboring wireless networks. This hybrid approach also aims to improve the signal-to-noise ratio (SNR) in indoor environments.
+To handle these challenges, Visible Light Communication - VLC is considered, a promising technology for indoor environments that can complement the deficiencies of RF systems [Mohsan2023]. In the following section, experimental results and statistical studies demonstrating signal degradation in urban environments will be presented, and a hybrid RF-VLC system will be proposed as a potential solution.
 
-In our study, we propose the technological integration of RF-VLC to improve indoor connectivity quality. Based on our measurements of a conventional RF signal across various levels and spaces of the University, we evidenced signal degradation as the conditions of the environment surrounding the signal capture system change, observing that the best SNR is obtained when the antenna is in a free environment (in this case), where it is exposed to electromagnetic waves radiated by different communication media. It is then through the integration of VLC systems for indoor signal distribution that we expect the SNR to be relatively uniform across the different spaces of the building.
+## Experimental Laboratory and Proposal of the RF-VLC Hybrid System
+### Degradation of a Broadcasting Signal
+For our study, we chose the free commercial frequency tuned to 103.5 MHz in the city of Medellín. We used a USRP (Universal Software Radio Peripheral) device along with AIRSPY software to perform the measurements. The selected locations for the measurements included the 1st to 5th floors of the university building, the terrace on the sixth floor, and the basements 1 and 2 of the Fraternidad campus at the ITM University Institution.
 
-This proposal opens the possibility of suggesting some recommendations for the installation of communication infrastructure in buildings to enable communication systems with higher SNR, implying connectivity with high-quality standards in any indoor space, ranging from places like homes to the most challenging scenarios such as underwater stations or underground mines.
+![Fraternidad campus at the ITM University Institution](img/ITM.png)
 
-***Keywords:*** *Atmospheric Absorption; Deep Fading; Scattering; RF; Shadowing, SNR; VLC.*
+### Statistic Analysis
+Our object of study resulted in the consolidated data shown in Table 2, where a lower average can be observed on the lower levels compared to the upper levels. A more graphical view can be seen in the histogram in Figure 2.
 
-# **Laboratory Description**
-For the SNR Laboratory, 9 samples of a conventional broadcast signal were taken in different spaces of the university, from the terrace to the basement 2; at a frequency tuned to 103.5 MHz using a USRP device connected to a laptop.
+The worst SNR values are observed in basements 1 and 2, indicating greater signal degradation in underground environments. In contrast, the terrace shows the best SNR values, reflecting better transmission conditions compared to the lower levels.
 
-Technically, after data collection, this laboratory consists of a series of Python tool applications to handle, process, and visualize data, especially focused on the signal-to-noise ratio (SNR). Using libraries such as Pandas, Matplotlib, and Seaborn to perform data analysis tasks and generate graphics.
+![Histogram by Source](img/Histogram-boldo.png)
 
-# **Consolidated Data**
+In Figure 3, the scatter measurements show a clear downward trend in the basements, indicating significant signal degradation compared to the upper levels. While the upper floors present more stable SNR values, the basements suffer from greater interference and signal absorption, reflecting worse transmission conditions.
 
-| Place                             | Q1 {dB} | Mean {dB} | Q3 {dB} | IQR {dB} | Lower Outlier {dB} | Upper Outlier {dB} | Std Dev {dB} | Median {dB} | Mode {dB} | Variance {dB} |
-|-----------------------------------|---------|-----------|---------|----------|--------------------|--------------------|--------------|-------------|-----------|----------------|
-| Piso 1           | 24.0575 | 25.06790  | 26.0500 | 1.9925   | 22.07915           | 28.05665           | 1.560855     | 24.980      | 25.45     | 2.436269       |
-| Piso 2           | 19.6975 | 20.33655  | 21.0025 | 1.3050   | 18.37905           | 22.29405           | 0.926371     | 20.280      | 20.17     | 0.858163       |
-| Piso 3         | 19.1375 | 20.20470  | 21.6775 | 2.5400   | 16.39470           | 24.01470           | 1.845682     | 19.565      | 19.21     | 3.406542       |
-| Piso 4          | 21.0275 | 21.92640  | 22.6325 | 1.6050   | 19.51890           | 24.33390           | 1.534590     | 21.920      | 21.15     | 2.354966       |
-| Piso 5        | 24.5550 | 25.75220  | 26.6800 | 2.1250   | 22.56470           | 28.93970           | 1.758153     | 25.725      | 25.17     | 3.091103       |
-| Piso 6       | 23.2450 | 24.14060  | 25.0225 | 1.7775   | 21.47435           | 26.80685           | 1.211611     | 24.170      | 22.10     | 1.468002       |
-| Piso 6 Outdoor  | 24.0650 | 24.74790  | 25.5400 | 1.4750   | 22.53540           | 26.96040           | 1.255151     | 24.805      | 25.80     | 1.575404       |
-| Sotano 1B        | 7.8750  | 11.50050  | 11.8150 | 3.9400   | 5.59050            | 17.41050           | 5.896987     | 8.565       | 8.26      | 34.774451      |
-| Sotano 2E        | 4.6100  | 4.92600   | 5.1800  | 0.5700   | 4.07100            | 5.78100            | 0.342081     | 4.935       | 4.57      | 0.117019       |
+![Scatter Plot](img/ScatterPlot.png)
 
+We applied the Kruskal-Wallis test, a non-parametric test used to determine if there are significant differences between the medians of two or more independent groups. We obtained the following results:
+- **Test statistic (H):** 1403.1096315801597
+- **p-value:** $1.2036681993227117e-297$
 
+Such a high H value indicates that at least one of the groups has a different median from the others. The extremely low p-value (practically zero) suggests that we reject the null hypothesis that the medians of all groups are equal.
 
-# **References**
-<div align="left">
-<ul>
-  <li>[1] A. G. Longley and J. M. Kreps, “OT Report 78-144: Radio Propagation in Urban Areas,” 1978.</li>
-  <li>[2] Kungl. Tekniska högskolan and Institute of Electrical and Electronics Engineers, 2018 10th
-International Conference on Advanced Infocomm Technology (ICAIT) : 12-15 August, 2018,
-Stockholm, Sweden.</li>
-  <li>[3] F. Defrance et al., “Structured Surface Design to Generate Any Beam Pattern at THz Frequencies.” [Online]. Available: https://www.researchgate.net/publication/335292622</li>
- <li>[4] L. Bravo Alvarez, S. Montejo-Sánchez, L. Rodríguez-López, C. Azurdia-Meza, and G. Saavedra, “A Review of Hybrid VLC/RF Networks: Features, Applications, and Future Directions,” Sensors, vol. 23, no. 17. Multidisciplinary Digital Publishing Institute (MDPI), Sep. 01, 2023. doi: 10.3390/s23177545.</li>
- <li>[5] ] M Pravin, “VLC BASED INDOOR BLIND NAVIGATION SYSTEM.”</li>
- <li>[6] T. Koonen, “Indoor Optical Wireless Systems: Technology, Trends, and Applications,” Journal of Lightwave Technology, vol. 36, no. 8, pp. 1459–1467, Apr. 2018, doi: 10.1109/JLT.2017.2787614.</li>
-  <li>[7] E. Kreyszig, H. Kreyszig, and E. J. Norminton, “Advanced Engineering Mathematics,” 2011. [Online]. Available: www.ieee.org.</li>
-</ul>
-</div>
+**The Kruskal-Wallis Test** indicates that there are significant differences between the medians of the different groups, since the p-value is extremely low (practically zero), which leads us to reject the null hypothesis; indicating that at least one of the groups has a different median from the others.
 
+The SNR statistical data presented in Table 3 support these findings. Basements 1 and 2 show the lowest means and medians (11.5 dB and 8.565 dB for Basement 1, 4.926 dB and 4.935 dB for Basement 2), as well as the highest variability (standard deviations of 5.896 and 0.342 respectively), indicating significant RF signal degradation in subway indoor environments. In contrast, the terrace has a higher mean and median (24.747 dB and 24.805 dB respectively) and lower variability, reflecting better transmission conditions in an outdoor environment.
+
+### Consolidated SNR Statistical Data
+| Place       | Q1      | Mean    | Q3      | IQR   | Down Outlier | Up Outlier | Std Dev | Median | Mode  | Variance |
+|-------------|---------|---------|---------|-------|--------------|------------|---------|--------|-------|----------|
+| Floor 1     | 24.0575 | 25.067  | 26.050  | 1.992 | 22.079       | 28.056     | 1.560   | 24.98  | 25.45 | 2.4362   |
+| Floor 2     | 19.6975 | 20.336  | 21.002  | 1.305 | 18.379       | 22.294     | 0.926   | 20.28  | 20.17 | 0.858    |
+| Floor 3     | 19.1375 | 20.204  | 21.677  | 2.540 | 16.394       | 24.014     | 1.845   | 19.56  | 19.21 | 3.406    |
+| Floor 4     | 21.0275 | 21.92   | 22.632  | 1.605 | 19.518       | 24.333     | 1.534   | 21.92  | 21.15 | 2.354    |
+| Floor 5     | 24.5550 | 25.75   | 26.680  | 2.125 | 22.564       | 28.939     | 1.758   | 25.72  | 25.17 | 3.091    |
+| Floor 6     | 23.2450 | 24.14   | 25.022  | 1.777 | 21.474       | 26.806     | 1.211   | 24.17  | 22.10 | 1.468    |
+| Terrace 6   | 24.065  | 24.747  | 25.540  | 1.475 | 22.535       | 26.960     | 1.255   | 24.805 | 25.80 | 1.575404 |
+| Basement 1  | 7.8750  | 11.500  | 11.815  | 3.940 | 5.590        | 17.410     | 5.896   | 8.565  | 8.26  | 34.774   |
+| Basement 2  | 4.610   | 4.9260  | 5.180   | 0.570 | 4.0710       | 5.781      | 0.342   | 4.935  | 4.57  | 0.117    |
+
+![SNR Violin Plot](img/Violin3.png)
+
+Analysis of the SNR violin plot by source reveals significant differences in radio signal quality across the different levels of the university. The lower floors show narrower distributions and more consistent SNR values, indicating more stable transmission conditions. In contrast, the upper floors and terrace show greater variability,
 
