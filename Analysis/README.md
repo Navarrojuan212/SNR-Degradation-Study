@@ -97,12 +97,12 @@ The SNR statistical data presented in Table 3 support these findings. Basements 
 
 ---
 
+Analysis of the SNR violin plot by source reveals significant differences in radio signal quality across the different levels of the university. The lower floors show narrower distributions and more consistent SNR values, indicating more stable transmission conditions. In contrast, the upper floors and terrace show greater variability,
+probably due to external environmental factors. Basements, although with intermediate variability, tend to have lower SNR values, reflecting more unfavorable transmission conditions in these subway environments. These findings highlight how location and environment influence RF signal degradation, underscoring the need for specific strategies to improve uniform signal distribution in areas with diverse characteristics.
+
 <div align="center">
     <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/ViolinPlot.png" alt="Violin Plot" width="600">
 </div>
-
-Analysis of the SNR violin plot by source reveals significant differences in radio signal quality across the different levels of the university. The lower floors show narrower distributions and more consistent SNR values, indicating more stable transmission conditions. In contrast, the upper floors and terrace show greater variability,
-probably due to external environmental factors. Basements, although with intermediate variability, tend to have lower SNR values, reflecting more unfavorable transmission conditions in these subway environments. These findings highlight how location and environment influence RF signal degradation, underscoring the need for specific strategies to improve uniform signal distribution in areas with diverse characteristics.
 
 # Hybrid RF-VLC System
 
