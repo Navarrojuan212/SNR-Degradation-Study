@@ -1,5 +1,5 @@
 <p align="center">
-<strong>Hybrid Optical-Radio Communication Technologies to Improve Indoor Telecommunications Systems</strong>
+<strong>HYBRID OPTICAL-RADIO COMMUNICATION TECHNOLOGIES TO IMPROVE INDOOR TELECOMMUNICATIONS SYSTEMS</strong>
 </p>
 
 <p align="center">
