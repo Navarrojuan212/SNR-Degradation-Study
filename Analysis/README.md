@@ -54,7 +54,7 @@ To handle these challenges, Visible Light Communication - VLC is considered, a p
 For our study, we chose the free commercial frequency tuned to 103.5 MHz in the city of Medellín. We used a USRP (Universal Software Radio Peripheral) device along with AIRSPY software to perform the measurements. The selected locations for the measurements included the 1st to 5th floors of the university building, the terrace on the sixth floor, and the basements 1 and 2 of the Fraternidad campus at the ITM University Institution.
 
 <div align="center">
-    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/Histogram.png" alt="Histogram" width="600">
+    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/ITM.png" alt="ITM" width="600">
 </div>
 
 ### Statistic Analysis
@@ -63,7 +63,7 @@ Our object of study resulted in the consolidated data shown in Table 2, where a 
 The worst SNR values are observed in basements 1 and 2, indicating greater signal degradation in underground environments. In contrast, the terrace shows the best SNR values, reflecting better transmission conditions compared to the lower levels.
 
 <div align="center">
-    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/ITM.png" alt="ITM" width="600">
+    <img src="https://github.com/Navarrojuan212/SNR-Degradation-Study/blob/master/Images/Histogram.png" alt="Histogram" width="600">
 </div>
 
 In Figure 3, the scatter measurements show a clear downward trend in the basements, indicating significant signal degradation compared to the upper levels. While the upper floors present more stable SNR values, the basements suffer from greater interference and signal absorption, reflecting worse transmission conditions.
