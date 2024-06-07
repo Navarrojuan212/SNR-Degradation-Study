@@ -21,6 +21,7 @@ These phenomena force communication systems to preprocess signals to ensure band
 | 10   | SHF     | 3 to 30 GHz      | 100 to 10 mm  |
 | 11   | EHF     | 30 to 300 GHz    | 10 to 1 mm    |
 | 12   | THF     | 300 to 3000 GHz  | $<$ 1 mm      |
+
 Data taken from the National Spectrum Agency - ANE.
 
 ![An urban broadcast radio tower](img/fig1.png)
@@ -55,17 +56,17 @@ Such a high H value indicates that at least one of the groups has a different me
 The SNR statistical data presented in Table 3 support these findings. Basements 1 and 2 show the lowest means and medians (11.5 dB and 8.565 dB for Basement 1, 4.926 dB and 4.935 dB for Basement 2), as well as the highest variability (standard deviations of 5.896 and 0.342 respectively), indicating significant RF signal degradation in subway indoor environments. In contrast, the terrace has a higher mean and median (24.747 dB and 24.805 dB respectively) and lower variability, reflecting better transmission conditions in an outdoor environment.
 
 ### Consolidated SNR Statistical Data
-| Place       | Q1      | Mean    | Q3      | IQR   | Down Outlier | Up Outlier | Std Dev | Median | Mode  | Variance |
+| Place       | Q1      | Mean    | Q3      | IQR   | $\downarrow$ Outlier | $\uparrow$ Outlier | Std Dev | Median | Mode  | Variance |
 |-------------|---------|---------|---------|-------|--------------|------------|---------|--------|-------|----------|
-| Floor 1     | 24.0575 | 25.067  | 26.050  | 1.992 | 22.079       | 28.056     | 1.560   | 24.98  | 25.45 | 2.4362   |
-| Floor 2     | 19.6975 | 20.336  | 21.002  | 1.305 | 18.379       | 22.294     | 0.926   | 20.28  | 20.17 | 0.858    |
-| Floor 3     | 19.1375 | 20.204  | 21.677  | 2.540 | 16.394       | 24.014     | 1.845   | 19.56  | 19.21 | 3.406    |
-| Floor 4     | 21.0275 | 21.92   | 22.632  | 1.605 | 19.518       | 24.333     | 1.534   | 21.92  | 21.15 | 2.354    |
-| Floor 5     | 24.5550 | 25.75   | 26.680  | 2.125 | 22.564       | 28.939     | 1.758   | 25.72  | 25.17 | 3.091    |
-| Floor 6     | 23.2450 | 24.14   | 25.022  | 1.777 | 21.474       | 26.806     | 1.211   | 24.17  | 22.10 | 1.468    |
-| Terrace 6   | 24.065  | 24.747  | 25.540  | 1.475 | 22.535       | 26.960     | 1.255   | 24.805 | 25.80 | 1.575404 |
-| Basement 1  | 7.8750  | 11.500  | 11.815  | 3.940 | 5.590        | 17.410     | 5.896   | 8.565  | 8.26  | 34.774   |
-| Basement 2  | 4.610   | 4.9260  | 5.180   | 0.570 | 4.0710       | 5.781      | 0.342   | 4.935  | 4.57  | 0.117    |
+| Floor 1     | 24.057 | 25.06  | 26.050  | 1.992 | 22.079       | 28.056     | 1.560   | 24.98  | 25.45 | 2.436   |
+| Floor 2     | 19.697 | 20.33  | 21.002  | 1.305 | 18.379       | 22.294     | 0.926   | 20.28  | 20.17 | 0.858    |
+| Floor 3     | 19.137 | 20.20  | 21.677  | 2.540 | 16.394       | 24.014     | 1.845   | 19.56  | 19.21 | 3.406    |
+| Floor 4     | 21.027 | 21.92   | 22.632  | 1.605 | 19.518       | 24.333     | 1.534   | 21.92  | 21.15 | 2.354    |
+| Floor 5     | 24.555 | 25.75   | 26.680  | 2.125 | 22.564       | 28.939     | 1.758   | 25.72  | 25.17 | 3.091    |
+| Floor 6     | 23.245 | 24.14   | 25.022  | 1.777 | 21.474       | 26.806     | 1.211   | 24.17  | 22.10 | 1.468    |
+| Terrace 6   | 24.065  | 24.74  | 25.540  | 1.475 | 22.535       | 26.960     | 1.255   | 24.80 | 25.80 | 1.575 |
+| Basement 1  | 7.875  | 11.50  | 11.815  | 3.940 | 5.590        | 17.410     | 5.896   | 8.56  | 8.26  | 34.774   |
+| Basement 2  | 4.610   | 4.92  | 5.180   | 0.570 | 4.0710       | 5.781      | 0.342   | 4.93  | 4.57  | 0.117    |
 
 ![SNR Violin Plot](img/Violin3.png)
 
