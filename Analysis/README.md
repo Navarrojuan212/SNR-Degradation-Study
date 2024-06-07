@@ -70,4 +70,25 @@ The SNR statistical data presented in Table 3 support these findings. Basements 
 ![SNR Violin Plot](img/Violin3.png)
 
 Analysis of the SNR violin plot by source reveals significant differences in radio signal quality across the different levels of the university. The lower floors show narrower distributions and more consistent SNR values, indicating more stable transmission conditions. In contrast, the upper floors and terrace show greater variability,
+probably due to external environmental factors. Basements, although with intermediate variability, tend to have lower SNR values, reflecting more unfavorable transmission conditions in these subway environments. These findings highlight how location and environment influence RF signal degradation, underscoring the need for specific strategies to improve uniform signal distribution in areas with diverse characteristics.
+
+# Hybrid RF-VLC System
+
+Broadcasting in densely populated urban environments faces critical challenges, as RF signals, although critical, are susceptible to interference, attenuation by physical obstacles and bandwidth saturation. These difficulties are compounded in indoor environments, where the presence of various structures and materials can cause shadow zones and significant SNR variations. 
+
+To handle these challenges, the integration of Visible Light Communication (VLC) systems presents itself as a complementary and promising solution. VLC systems use LEDs as transmitters and photodetectors as receivers, operating in the visible spectrum, from 400 THz to 790 THz \cite{Talha2019}.
+
+This technology is particularly suitable for indoor environments due to its ability to provide high bandwidth and lower interference compared to RF signals. In addition, research on VLC shows various applications and advantages, such as low power consumption and the use of free spectrum bands \cite{Khan2017} \cite{Matheus2019} \cite{Pathak2015}.
+
+The convergence of RF and VLC systems has the potential to combine the strengths of both technologies, mitigating their individual limitations. RF signals offer wide coverage and penetration capability, essential for traversing obstacles and reaching more remote areas within buildings. VLC systems, on the other hand, can provide superior transmission speeds and efficient use of bandwidth, leveraging existing lighting infrastructure \cite{Almadani2020}.
+
+The design of a hybrid RF-VLC system involves the integration of specific components that enable efficient and reliable communication. Using the heterodyning process \cite{Avdeyenko2023}, intermediate frequency radio signals can be matched to the frequency response of the LEDs, creating a system that combines the best of both worlds. This hybrid system would not only improve SNR in indoor environments, but also optimize the distribution of broadcast signals in densely populated urban areas.
+
+
+# Conclusion
+
+The convergence of RF and VLC technologies offers an innovative solution to overcome current barriers in indoor data transmission. This integration not only handles the challenges inherent in indoor communications, but also establishes a new paradigm in data transmission, providing more reliable and efficient communication in densely populated urban environments. This proposal promises to significantly improve the quality of telecommunications service, meeting the growing demands for speed and reliability in data transmission.
+
+The SNR study demonstrated signal degradation in indoor environments and, based on the state of the art and our experience in VLC, we propose convergence as a promising solution to mitigate these problems and improve the quality of communications. Also, this technology is not only applicable to urban scenarios, but also to potential applications in IoT, smart cities, sustainable mining and subway communications, among others.
+
 
