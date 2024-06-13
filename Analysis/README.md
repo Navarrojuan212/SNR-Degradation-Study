@@ -122,3 +122,49 @@ The design of a hybrid RF-VLC system involves the integration of specific compon
 The convergence of RF and VLC technologies offers an innovative solution to overcome current barriers in indoor data transmission. This integration not only handles the challenges inherent in indoor communications, but also establishes a new paradigm in data transmission, providing more reliable and efficient communication in densely populated urban environments. This proposal promises to significantly improve the quality of telecommunications service, meeting the growing demands for speed and reliability in data transmission.
 
 The SNR study demonstrated signal degradation in indoor environments and, based on the state of the art and our experience in VLC, we propose convergence as a promising solution to mitigate these problems and improve the quality of communications. Also, this technology is not only applicable to urban scenarios, but also to potential applications in IoT, smart cities, sustainable mining and subway communications, among others.
+
+## References
+
+<div align="left">
+<ul>
+  <li>[1] G. Hattab and D. Cabric, “Unlicensed spectrum sharing for massive
+internet-of-things communications,” 2019.</li>
+  <li>[2] Kungl. Tekniska högskolan and Institute of Electrical and Electronics Engineers, 2018 10th
+International Conference on Advanced Infocomm Technology (ICAIT) : 12-15 August, 2018,
+Stockholm, Sweden.</li>
+  <li>[3] F. Defrance et al., “Structured Surface Design to Generate Any Beam Pattern at THz Frequencies.” [Online]. Available: https://www.researchgate.net/publication/335292622</li>
+ <li>[4] L. Bravo Alvarez, S. Montejo-Sánchez, L. Rodríguez-López, C. Azurdia-Meza, and G. Saavedra, “A Review of Hybrid VLC/RF Networks: Features, Applications, and Future Directions,” Sensors, vol. 23, no. 17. Multidisciplinary Digital Publishing Institute (MDPI), Sep. 01, 2023. doi: 10.3390/s23177545.</li>
+ <li>[5] ] M Pravin, “VLC BASED INDOOR BLIND NAVIGATION SYSTEM.”</li>
+ <li>[6] T. Koonen, “Indoor Optical Wireless Systems: Technology, Trends, and Applications,” Journal of Lightwave Technology, vol. 36, no. 8, pp. 1459–1467, Apr. 2018, doi: 10.1109/JLT.2017.2787614.</li>
+  <li>[7] E. Kreyszig, H. Kreyszig, and E. J. Norminton, “Advanced Engineering Mathematics,” 2011. [Online]. Available: www.ieee.org.</li>
+  <li>[7] M. V. Tinin, “Role of diffraction effects in the formation
+of a radio signal reflected from a randomly inhomogeneous
+ionospheric layer,” https://doi.org/10.1117/12.2575532, vol.
+11560, pp. 387–391, 11 2020. [Online]. Available: https:
+//www.spiedigitallibrary.org/conference-proceedings-of-spie/11560/
+115601Q/Role-of-diffraction-effects-in-the-formation-of-a-radio/10.
+1117/12.2575532.short?tab=ArticleLink</li>
+<li>[8] S. A. H. Mohsan, M. Sadiq, Y. Li, A. V. Shvetsov, S. V. Shvetsova,
+and M. Shafiq, “Noma-based vlc systems: A comprehensive review,” 3
+2023.</li>
+<li>[9] T. Khani, H. Mangrio, and F. Umrani, “Performance analysis of vlc
+system using commercially available components,” 2019.</li>
+<li>[10] L. U. Khan, “Visible light communication: Applications, architecture,
+standardization and research challenges,” pp. 78–88, 5 2017.</li>
+<li>[11] L. E. M. Matheus, A. B. Vieira, L. F. Vieira, M. A. Vieira, and
+O. Gnawali, “Visible light communication: Concepts, applications and challenges,” IEEE Communications Surveys and Tutorials, vol. 21, pp. 3204–3237, 10 2019.</li>
+<li>[12] P. H. Pathak, X. Feng, P. Hu, and P. Mohapatra, “Visible light communication, networking, and sensing: A survey, potential and challenges,” pp. 2047–2077, 10 2015.</li>
+<li>[13] Y. Almadani, D. Plets, S. Bastiaens, W. Joseph, M. Ijaz, Z. Ghassemlooy, and S. Rajbhandari, “Visible light communications for industrial applications—challenges and potentials,” pp. 1–38, 12 2020.</li>
+<li>[14] G. Avdeyenko and I. Butko, “Impulse ultrawideband wireless communication system of the terahertz frequency band.” Institute of Electrical and Electronics Engineers Inc., 2023.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
